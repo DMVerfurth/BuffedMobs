@@ -1,0 +1,4 @@
+name: BuffedMobs
+version: '1.0'
+main: dmvmc.buffedMobs.BuffedMobs
+api-version: '1.21'
