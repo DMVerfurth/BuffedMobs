@@ -22,6 +22,7 @@ public final class BuffedMobs extends JavaPlugin {
 
         // Register command and listener
         getCommand("setmobmultiplier").setExecutor(new SetMobMultiplierCommand(this));
+        getCommand("setmobmultiplier").setTabCompleter(new SetMobMultiplierTabCompleter());
         Bukkit.getPluginManager().registerEvents(new EntitySpawnListener(this), this);
         getLogger().info("BuffedMobs has been enabled!");
 
