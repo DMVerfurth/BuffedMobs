@@ -2,3 +2,14 @@ name: BuffedMobs
 version: '1.0'
 main: dmvmc.buffedMobs.BuffedMobs
 api-version: '1.21'
+
+commands:
+  setmobmultiplier:
+    description: Sets the health multiplier of a mob
+    usage: /setmobmultiplier <mob> <multiplier>
+    permission: buffedMobs.set
+
+permissions:
+  buffedMobs.set:
+    description: Allows the player to set the health multiplier of mobs
+    default: op
